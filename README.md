@@ -46,6 +46,16 @@ flutter pub get
 
 ### 2. Get Your Chat ID
 
+The easiest way is to use [@InstantChatIDBot](https://t.me/InstantChatIDBot):
+
+- Open Telegram and start a chat with [@InstantChatIDBot](https://t.me/InstantChatIDBot)
+- It will instantly show your **Chat ID**
+- Copy that ID and use it in your initialization code
+
+---
+
+**Alternative (manual method):**
+
 **For personal chat:**
 
 - Message your bot, then visit:  
@@ -55,7 +65,7 @@ flutter pub get
 **For channels:**
 
 - Add your bot as an admin
-- Use `@channelusername` or the **negative ID** from the API
+- Use `@channelusername` or the **negative ID** from the API response (e.g., `-1001234567890`)
 
 ### 3. Initialize in `main.dart`
 
