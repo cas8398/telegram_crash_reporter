@@ -70,6 +70,7 @@ The easiest way is to use [@InstantChatIDBot](https://t.me/InstantChatIDBot):
 ### 3. Initialize in `main.dart`
 
 ```dart
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:telegram_crash_reporter/telegram_crash_reporter.dart';
 
@@ -82,6 +83,43 @@ void main() async {
     chatId: 123456, // YOUR_CHAT_ID
   );
 
+  // Catch Flutter UI framework errors
+  FlutterError.onError = (details) {
+    TelegramCrashReporter.reportCrash(
+      error: details.exception,
+      stackTrace: details.stack ?? StackTrace.current,
+      context: 'Flutter UI Error: ${details.library}',
+      fatal: true,
+      extraData: {
+        'library': details.library,
+        'stackFiltered': details.stackFilter,
+      },
+    );
+  };
+
+  // Catch unhandled Dart runtime errors
+  PlatformDispatcher.instance.onError = (error, stack) {
+    TelegramCrashReporter.reportCrash(
+      error: error,
+      stackTrace: stack,
+      context: 'Dart Runtime Error',
+      fatal: true,
+    );
+    return true; // Keep app running
+  };
+
+  // Optional: Catch errors in the widget tree
+  ErrorWidget.builder = (errorDetails) {
+    TelegramCrashReporter.reportCrash(
+      error: errorDetails.exception,
+      stackTrace: errorDetails.stack!,
+      context: 'Error Widget',
+      fatal: false,
+    );
+    return ErrorWidget(errorDetails.exception);
+  };
+
+  runApp(const MyApp());
 }
 ```
 
