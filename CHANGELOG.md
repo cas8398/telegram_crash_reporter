@@ -1,5 +1,11 @@
 ### 🪵 `CHANGELOG.md`
 
+## 1.1.1
+
+```markdown
+- Update readme.md
+```
+
 ## 1.1.0
 
 ```markdown
