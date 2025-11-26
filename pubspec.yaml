@@ -1,6 +1,6 @@
 name: telegram_crash_reporter
 description: A lightweight Flutter plugin for sending crash reports and logs to Telegram
-version: 1.0.0
+version: 1.1.0
 homepage: https://github.com/cas8398/telegram_crash_reporter
 
 environment:

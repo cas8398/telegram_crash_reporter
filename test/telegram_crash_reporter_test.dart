@@ -1,3 +1,5 @@
+// ignore_for_file: dead_code
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:telegram_crash_reporter/telegram_crash_reporter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -58,8 +60,10 @@ void main() {
 
       final logs = await TelegramCrashReporter.getLocalCrashLogs();
       expect(logs.length, 1);
-      expect(logs[0]['error'], 'Exception: Test exception');
-      expect(logs[0]['context'], 'Test Context');
+
+      // Access properties directly from CrashData object
+      expect(logs[0].error, 'Exception: Test exception');
+      expect(logs[0].context, 'Test Context');
     });
 
     test('Multiple crashes are stored correctly', () async {
@@ -90,7 +94,9 @@ void main() {
       );
 
       final logs = await TelegramCrashReporter.getLocalCrashLogs();
-      expect(logs[0]['extra_data'], extraData);
+
+      // Access the property directly from CrashData object
+      expect(logs[0].extraData, extraData);
     });
 
     test('Crash logs can be formatted as string', () async {

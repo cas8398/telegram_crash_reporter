@@ -81,6 +81,7 @@ void main() async {
   await TelegramCrashReporter.initialize(
     botToken: 'YOUR_BOT_TOKEN',
     chatId: 123456, // YOUR_CHAT_ID
+    showDebugPrint: true // FALSE
   );
 
   // Catch Flutter UI framework errors
@@ -176,7 +177,7 @@ TelegramCrashReporter.report(
 await TelegramCrashReporter.initialize(
   botToken: '123...',
   chatId: '-1001234567890', // Channel example
-  enableLogging: true,      // Print to console (debug only)
+  showDebugPrint: true,      // Print to console (debug only)
 );
 ```
 
