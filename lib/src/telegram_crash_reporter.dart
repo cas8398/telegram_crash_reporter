@@ -6,8 +6,6 @@ import 'message_builder.dart';
 import 'models/crash_data.dart';
 
 class TelegramCrashReporter {
-  static String _botToken = '';
-  static int _chatId = 0;
   static bool _isInitialized = false;
   static final List<Map<String, dynamic>> _pendingCrashes = [];
   static bool _isEnabled = true;
@@ -24,8 +22,6 @@ class TelegramCrashReporter {
     bool sendToTelegramByDefault = true,
     bool showDebugPrint = true,
   }) {
-    _botToken = botToken;
-    _chatId = chatId;
     _isInitialized = true;
     _isEnabled = enable;
     _sendToTelegramByDefault = sendToTelegramByDefault;

@@ -213,7 +213,7 @@
     },
     {
       "name": "telegram_crash_reporter",
-      "rootUri": "../../",
+      "rootUri": "file:///home/wayang/.pub-cache/hosted/pub.dev/telegram_crash_reporter-1.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -260,7 +260,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2025-11-13T10:22:10.491636Z",
+  "generated": "2025-11-26T08:33:41.671528Z",
   "generator": "pub",
   "generatorVersion": "3.6.0",
   "flutterRoot": "file:///opt/flutter",

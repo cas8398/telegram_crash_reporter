@@ -272,9 +272,10 @@ packages:
   telegram_crash_reporter:
     dependency: "direct main"
     description:
-      path: ".."
-      relative: true
-    source: path
+      name: telegram_crash_reporter
+      sha256: "5b8622b058c23a8658843e323662d1079f3f5ff2376485c3eb88f92ce463b309"
+      url: "https://pub.dev"
+    source: hosted
     version: "1.0.0"
   term_glyph:
     dependency: transitive

@@ -122,6 +122,10 @@ string_scanner
 3.1
 file:///home/wayang/.pub-cache/hosted/pub.dev/string_scanner-1.3.0/
 file:///home/wayang/.pub-cache/hosted/pub.dev/string_scanner-1.3.0/lib/
+telegram_crash_reporter
+2.17
+file:///home/wayang/.pub-cache/hosted/pub.dev/telegram_crash_reporter-1.0.0/
+file:///home/wayang/.pub-cache/hosted/pub.dev/telegram_crash_reporter-1.0.0/lib/
 term_glyph
 2.12
 file:///home/wayang/.pub-cache/hosted/pub.dev/term_glyph-1.2.1/
@@ -146,10 +150,6 @@ xdg_directories
 3.3
 file:///home/wayang/.pub-cache/hosted/pub.dev/xdg_directories-1.1.0/
 file:///home/wayang/.pub-cache/hosted/pub.dev/xdg_directories-1.1.0/lib/
-telegram_crash_reporter
-2.17
-file:///home/wayang/Documents/GitHub/@flutter/my_package/telegram_crash_reporter/
-file:///home/wayang/Documents/GitHub/@flutter/my_package/telegram_crash_reporter/lib/
 telegram_crash_reporter_example
 2.17
 file:///home/wayang/Documents/GitHub/@flutter/my_package/telegram_crash_reporter/example/
