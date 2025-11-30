@@ -5,7 +5,7 @@ A lightweight Flutter plugin that sends **crash reports, errors, and custom logs
 ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
 ![Pub Version](https://img.shields.io/pub/v/telegram_crash_reporter?color=blue&style=for-the-badge)
 ![License](https://img.shields.io/github/license/cas8398/telegram_crash_reporter?style=for-the-badge)
-[![wakatime](https://wakatime.com/badge/user/70818c15-eb72-433e-9174-2ed1623e2fca/project/18c387ad-e241-4757-a406-fd51d504eed4.svg)](https://wakatime.com/badge/user/70818c15-eb72-433e-9174-2ed1623e2fca/project/18c387ad-e241-4757-a406-fd51d504eed4)
+[![wakatime](https://wakatime.com/badge/github/cas8398/telegram_crash_reporter.svg)](https://wakatime.com/badge/github/cas8398/telegram_crash_reporter)
 
 > **💡 Looking for multi-platform support?** Check out [**crash_reporter**](https://pub.dev/packages/crash_reporter) — the advanced version that can send crash reports to **Telegram, Slack, Discord, and custom webhooks** simultaneously. Perfect for teams that need flexible routing across multiple channels.
 
